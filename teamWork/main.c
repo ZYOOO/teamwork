@@ -340,9 +340,10 @@
 //	int i,j,k,l,n;
 //	r >= c ? (k=r) : (k=c);
 //	r <= c ? (l=r) : (l=c);
-//	for(i=0; i<k; i++)
+//	a[k][k];
+//	for(i=0; i<l; i++)
 //	{
-//		for(j=i; j<l; j++)
+//		for(j=i; j<k; j++)
 //		{
 //			n = a[i][j];
 //			a[i][j] = a[j][i];
@@ -367,12 +368,12 @@
 //
 //void print(int r, int c, int a[r][c])
 //{
-//	for(int i=0; i<r; i++)
+//	for(int i=0; i<c; i++)
 //	{
-//		for(int j=0; j<c; j++)
+//		for(int j=0; j<r; j++)
 //		{
 //			printf("%d \t",a[i][j]);
-//			if(j==c-1) printf("\n");
+//			if(j==r-1) printf("\n");
 //		}
 //	}
 //}
